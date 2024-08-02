@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <textarea class="txt_area" name="value1" id="txtAreaMain" placeholder="Вставьте тело документа..."></textarea>
+        <div class="container_btn">
+            <button class="btn btn-get-codes" id="btn1" onclick="getValue()">Получить коды</button>
+            <button class="btn btn-clear-res" id="btn2" onclick="clearResults()">Очистить рез-т</button>
+            <button class="btn btn-clear-all" id="btn3" onclick="clearAll()">Очистить ВСЁ</button>
+            <button class="btn btn-copy" id="btn4" onclick="copyResults()" data-copy="#txtAreaRes">
+                <img class="icon-copy" src="adds/copy.svg" alt="">
+                <span class="copy-label">Скопировать</span>
+            </button>
+
+            
+        </div> 
+        <textarea class="txt_area" name="value2" id="txtAreaRes" onclick="copyToClipboard()" disabled></textarea>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

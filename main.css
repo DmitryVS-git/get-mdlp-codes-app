@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0B1120;
+}
+
+.container {
+    display: flex;
+    padding-top: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 20px 0 20px;
+    /* flex: 1 1 1; */
+}
+
+.container_btn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+
+.btn {
+    color: white;
+    width: 170px;
+    min-height: 70px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 36px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn:first-child {
+    margin-top: 0px;
+}
+
+.btn:last-child {
+    margin-bottom: 0px;
+}
+
+.btn-get-codes {
+    background-color: #2196f3;
+
+}
+
+.btn-clear-res {
+    background-color: #F87338;
+}
+
+.btn-clear-all {
+    background-color: #f83838;
+}
+
+.btn-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    gap: 5px;
+    background-color: #7CB342;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.btn-copy:active {
+    background-color: #5b8330;
+}
+
+.btn-get-codes:active {
+    background-color: #1a78c5;
+}
+
+.btn-clear-res:active {
+    background-color: #c0582b;
+
+}
+
+.btn-clear-all:active {
+    background-color: #c02b2b;
+}
+
+.btn-copy:disabled {
+    background: #f1f1f1;
+    color: #333333;
+    cursor: not-allowed;
+}
+
+.icon-copy {
+    width: 30px;
+    height: 30px;
+}
+
+.txt_area {
+    font-size: 14px;
+    font-weight: 600;
+    resize: vertical;
+    flex-grow: 1;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    line-height: 1.4;
+    transition: all 1.2s;
+    min-width: 150px;
+    min-height: 550px;
+    background-color: #1E293B;
+    color:#d3d9e4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 1.2s;
+    -ms-transition: all 1.2s;
+    -o-transition: all 1.2s;
+}
+
+.txt_area:hover {
+    cursor: pointer;
+    background-color: #161f2d;
+}
+
+.txt_area:focus {
+    cursor: text;
+    color: #333333;
+    background-color: rgb(228, 225, 225);
+    border-color: #333333;
+}
